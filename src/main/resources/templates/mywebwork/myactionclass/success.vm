@@ -1,0 +1,17 @@
+<form class="aui">
+    <div class="field-group">
+        <label for="text-input">Param 1<span class="aui-icon icon-required">required</span></label>
+        <input class="text" type="text" id="text-input" name="text-input" title="Text input">
+        <div class="description">First input field Param 1</div>
+    </div>
+    <div class="field-group">
+        <label for="text-input">Param 2<span class="aui-icon icon-required">required</span></label>
+        <input class="text" type="text" id="text-input" name="text-input" title="Text input">
+        <div class="description">First input field Param 2</div>
+    </div>
+
+    <div class="field-group">
+        <button class="aui-button aui-button-primary">Save</button>
+    </div>
+
+</form>

@@ -30,9 +30,10 @@
     <description key="firstsection.description">First Section</description>  
     <label key="first_section.mywebwork.label"/> 
   </web-section>  
-  <web-item name="First Item" i18n-name-key="first-item.name" key="first-item" section="admin_plugins_menu/first_section" weight="1000"> 
+
+  <web-item name="First Item" i18n-name-key="first-item.name" key="first-item" section="admin_plugins_menu/first_section" weight="1000">
     <description key="first-item.description">The First Item Plugin</description>  
     <label key="first-item.label"></label>  
-    <link linkId="first-item-link">/secure/MyActionClass.jspa</link>
+    <link linkId="first-item-link">/secure/admin/MyActionClass.jspa</link>
   </web-item>
 </atlassian-plugin>
