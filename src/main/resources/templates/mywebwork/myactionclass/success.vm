@@ -1,17 +1,17 @@
 <form class="aui">
     <div class="field-group">
-        <label for="text-input">Param 1<span class="aui-icon icon-required">required</span></label>
+        <label for="text-input">$i18n.getText("input.field1.name")<span class="aui-icon icon-required">required</span></label>
         <input class="text" type="text" id="text-input" name="text-input" title="Text input">
-        <div class="description">First input field Param 1</div>
+        <div class="description">$i18n.getText("input.field1.desc")</div>
     </div>
     <div class="field-group">
-        <label for="text-input">Param 2<span class="aui-icon icon-required">required</span></label>
+        <label for="text-input">$i18n.getText("input.field2.name")<span class="aui-icon icon-required">required</span></label>
         <input class="text" type="text" id="text-input" name="text-input" title="Text input">
-        <div class="description">First input field Param 2</div>
+        <div class="description">$i18n.getText("input.field2.desc")</div>
     </div>
 
     <div class="field-group">
-        <button class="aui-button aui-button-primary">Save</button>
+        <button class="aui-button aui-button-primary">$i18n.getText("button_save.name")</button>
     </div>
 
 </form>
