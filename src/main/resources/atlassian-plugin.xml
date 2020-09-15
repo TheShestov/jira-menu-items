@@ -9,7 +9,7 @@
     <param name="plugin-logo">images/pluginLogo.png</param> 
   </plugin-info>  
   <!-- add our i18n resource -->  
-  <resource type="i18n" name="i18n" location="jira-menu-items"/>  
+  <resource type="i18n" name="i18n" location="/i18n/jira-menu-items"/>
   <!-- add our web resources -->  
   <web-resource key="jira-menu-items-resources" name="jira-menu-items Web Resources"> 
     <dependency>com.atlassian.auiplugin:ajs</dependency>  
