@@ -18,10 +18,10 @@
     <resource type="download" name="images/" location="/images"/>  
     <context>jira-menu-items</context> 
   </web-resource>  
-  <webwork1 key="mywebwork" name="mywebwork" i18n-name-key="mywebwork.name"> 
+  <webwork1 key="mywebwork" name="mywebwork" i18n-name-key="mywebwork.name">
     <description key="mywebwork.description">The mywebwork Plugin</description>  
     <actions> 
-      <action name="com.atlassian.jira.firstplugin.jira.webwork.MyActionClass" alias="MyActionClass"> 
+      <action name="com.atlassian.jira.firstplugin.jira.webwork.MyActionClass" alias="MyActionClass" roles-required="admin">
         <view name="success">/templates/mywebwork/myactionclass/success.vm</view> 
       </action> 
     </actions> 
