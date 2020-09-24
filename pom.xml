@@ -29,6 +29,14 @@
             <scope>provided</scope>
         </dependency>
         -->
+        <!--
+        <dependency>
+            <groupId>com.atlassian.jira</groupId>
+            <artifactId>jira-sal-plugin</artifactId>
+            <version>${jira.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

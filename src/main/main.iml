@@ -89,5 +89,7 @@
     <orderEntry type="library" name="lib20" level="project" />
     <orderEntry type="library" name="lib29" level="project" />
     <orderEntry type="library" name="lib33" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.jira:jira-api:8.12.0" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.sal:sal-api:4.2.0" level="project" />
   </component>
 </module>
