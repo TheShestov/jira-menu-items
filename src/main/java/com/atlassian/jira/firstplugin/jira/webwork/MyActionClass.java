@@ -35,7 +35,7 @@ public class MyActionClass extends JiraWebActionSupport
 
     public String getParameter1() {
         if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null || pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1").equals("")){
-            String noName = "Required value field!";
+            String noName = "";
             pluginSettings.put(PLUGIN_STORAGE_KEY +".parameter1", noName);
         }
         return (String) pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1");
@@ -47,7 +47,7 @@ public class MyActionClass extends JiraWebActionSupport
 
     public String getParameter2() {
         if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2") == null || pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2").equals("")){
-            String noName = "Required value field!";
+            String noName = "";
             pluginSettings.put(PLUGIN_STORAGE_KEY +".parameter2", noName);
         }
         return (String) pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2");
@@ -61,7 +61,7 @@ public class MyActionClass extends JiraWebActionSupport
     /*
     public String temp(){
         if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null){
-            return "нихера тут нет!";
+            return "в PLUGIN_STORAGE_KEY + .parameter1 пусто";
         }
         return (String) pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1");
     }*/
