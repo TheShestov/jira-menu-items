@@ -56,10 +56,14 @@ public class MyActionClass extends JiraWebActionSupport
     public void setParameter2(String parameter2) {
         pluginSettings.put(PLUGIN_STORAGE_KEY + ".parameter2", parameter2);
     }
-
+/*
+    public void clear(){
+        pluginSettings.put("111",PLUGIN_STORAGE_KEY + ".parameter1");
+        PluginSettings bu = pluginSettings.get("button");
+    }*/
     //For test
-    /*
-    public String temp(){
+    /*public String temp(){
+
         if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null){
             return "в PLUGIN_STORAGE_KEY + .parameter1 пусто";
         }

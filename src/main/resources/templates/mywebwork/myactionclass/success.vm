@@ -20,9 +20,11 @@
             </div>
 
             <div class="field-group">
-                <input type="submit" value="$i18n.getText("button_save.name")" class="button">
+                <input type="submit" name="button" value="$i18n.getText("button_save.name")" class="button">
+                <input type="submit" name="button" value="$i18n.getText("button_clear.name")" class="button">
             </div>
 
+            #*<br>Возвращается вот это: $temp<br>*#
         #*
             <div style="background: #FFFFFF">
                 <table class="jiraform maxWidth">
@@ -33,7 +35,7 @@
                     </tr>
                     <tr>
                         <td class="jiraformbody">
-                            Возвращается вот этО: $temp<br>
+                            Возвращается вот это: $temp<br>
                             This page is what the Action Alpha action class shows when success is returned.
                         </td>
                     </tr>
