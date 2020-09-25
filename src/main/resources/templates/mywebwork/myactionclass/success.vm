@@ -1,40 +1,51 @@
-<form class="aui" action="" method="post">
-    <div class="field-group">
-        <label for="parameter1">$i18n.getText("input.field1.name")<span class="aui-icon icon-required">required</span></label>
-        <input class="text" type="text" id="parameter1" name="parameter1" placeholder="$i18n.getText("placeholder.field1")" value="$action.getParameter1()">
-        <div class="description">$i18n.getText("input.field1.desc")</div>
-    </div>
-    <div class="field-group">
-        <label for="parameter2">$i18n.getText("input.field2.name")<span class="aui-icon icon-required">required</span></label>
-        <input class="text" type="text" id="parameter2" name="parameter2" placeholder="$i18n.getText("placeholder.field2")" value="$action.getParameter2()">
-        <div class="description">$i18n.getText("input.field2.desc")</div>
-    </div>
+<html>
+    <head>
+        <title>
+            $i18n.getText("elem1.header.title")
+        </title>
+    </head>
+    <body>
 
-    <div class="field-group">
-        <input type="submit" value="$i18n.getText("button_save.name")" class="button">
-    </div>
+        <form class="aui" action="" method="post">
+            <title>First Plugin</title>
+            <div class="field-group">
+                <label for="parameter1">$i18n.getText("input.field1.name")<span class="aui-icon icon-required">required</span></label>
+                <input class="text" type="text" id="parameter1" name="parameter1" placeholder="$i18n.getText("placeholder.field1")" value="$!parameter1">
+                <div class="description">$i18n.getText("input.field1.desc")</div>
+            </div>
+            <div class="field-group">
+                <label for="parameter2">$i18n.getText("input.field2.name")<span class="aui-icon icon-required">required</span></label>
+                <input class="text" type="text" id="parameter2" name="parameter2" placeholder="$i18n.getText("placeholder.field2")" value="$action.getParameter2()">
+                <div class="description">$i18n.getText("input.field2.desc")</div>
+            </div>
 
-#*
-    <div style="background: #FFFFFF">
-        <table class="jiraform maxWidth">
-            <tr>
-                <td class="jiraformheader">
-                    <h3 class="formtitle">Action Alpha Success</h3>
-                </td>
-            </tr>
-            <tr>
-                <td class="jiraformbody">
-                    Возвращается вот этО: $temp<br>
-                    This page is what the Action Alpha action class shows when success is returned.
-                </td>
-            </tr>
+            <div class="field-group">
+                <input type="submit" value="$i18n.getText("button_save.name")" class="button">
+            </div>
 
-            <tr>
-                <td class="jiraformbody">
-                    *##*The raw current parameter value is: $action.getParameter1().*##*
-                </td>
-            </tr>
-        </table>
-    </div>*#
+        #*
+            <div style="background: #FFFFFF">
+                <table class="jiraform maxWidth">
+                    <tr>
+                        <td class="jiraformheader">
+                            <h3 class="formtitle">Action Alpha Success</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="jiraformbody">
+                            Возвращается вот этО: $temp<br>
+                            This page is what the Action Alpha action class shows when success is returned.
+                        </td>
+                    </tr>
 
-</form>
+                    <tr>
+                        <td class="jiraformbody">
+                            *##*The raw current parameter value is: $action.getParameter1().*##*
+                        </td>
+                    </tr>
+                </table>
+            </div>*#
+
+        </form>
+    </body>
+</html>
