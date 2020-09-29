@@ -1,4 +1,4 @@
-package com.atlassian.jira.firstplugin.jira.webwork;
+package info.shestov.den.jira.firstplugin.webwork;
 
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.sal.api.pluginsettings.PluginSettings;
@@ -34,10 +34,10 @@ public class MyActionClass extends JiraWebActionSupport
     }
 
     public String getParameter1() {
-        if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null || pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1").equals("")){
+        /*if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null || pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1").equals("")){
             String noName = "";
             pluginSettings.put(PLUGIN_STORAGE_KEY +".parameter1", noName);
-        }
+        }*/
         return (String) pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1");
     }
 
@@ -46,10 +46,10 @@ public class MyActionClass extends JiraWebActionSupport
     }
 
     public String getParameter2() {
-        if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2") == null || pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2").equals("")){
+        /*if (pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2") == null || pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2").equals("")){
             String noName = "";
             pluginSettings.put(PLUGIN_STORAGE_KEY +".parameter2", noName);
-        }
+        }*/
         return (String) pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter2");
     }
 

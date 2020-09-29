@@ -3,9 +3,6 @@ package ut.com.atlassian.jira.firstplugin.jira.webwork;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import com.atlassian.jira.firstplugin.jira.webwork.MyActionClass;
-
-import static org.mockito.Mockito.*;
 
 /**
  * @since 3.5

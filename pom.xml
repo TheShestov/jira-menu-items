@@ -2,7 +2,7 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.atlassian.jira.firstplugin</groupId>
+    <groupId>info.shestov.den.jira.firstplugin</groupId>
     <artifactId>jira-menu-items</artifactId>
     <version>3.0.3</version>
     <organization>
@@ -10,7 +10,7 @@
         <url>http://www.example.com/</url>
     </organization>
     <name>jira-menu-items</name>
-    <description>This is the com.atlassian.jira.firstplugin:jira-menu-items plugin for Atlassian JIRA.</description>
+    <description>This is a first plugin for Jira, from den.shestov.info.</description>
     <packaging>atlassian-plugin</packaging>
     <dependencies>
         <dependency>
