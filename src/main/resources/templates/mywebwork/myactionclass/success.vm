@@ -3,6 +3,8 @@
         <title>
             $i18n.getText("elem1.header.title")
         </title>
+        <meta name="decorator" content="atl.admin" />
+        <meta name="admin.active.section" content="admin_plugins_menu/first_section/first-item">
     </head>
     <body>
 
@@ -15,13 +17,13 @@
             </div>
             <div class="field-group">
                 <label for="parameter2">$i18n.getText("input.field2.name")<span class="aui-icon icon-required">required</span></label>
-                <input class="text" type="text" id="parameter2" name="parameter2" placeholder="$i18n.getText("placeholder.field2")" value="$action.getParameter2()">
+                <input class="text" type="text" id="parameter2" name="parameter2" placeholder="$i18n.getText("placeholder.field2")" value="$!parameter2">
                 <div class="description">$i18n.getText("input.field2.desc")</div>
             </div>
 
             <div class="field-group">
-                <input type="submit" name="button" value="$i18n.getText("button_save.name")" class="button">
-                <input type="submit" name="button" value="$i18n.getText("button_clear.name")" class="button">
+                <input type="submit" name="button" value="$i18n.getText("button_save.name")" class="button" formaction="MyActionClass!save.jspa">
+                <input type="submit" name="button" value="$i18n.getText("button_clear.name")" class="button" formaction="MyActionClass!clear.jspa">
             </div>
 
             #*<br>Возвращается вот это: $temp<br>*#
