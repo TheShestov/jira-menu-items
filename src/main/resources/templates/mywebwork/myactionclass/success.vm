@@ -12,7 +12,7 @@
             <title>First Plugin</title>
             <div class="field-group">
                 <label for="parameter1">$i18n.getText("input.field1.name")<span class="aui-icon icon-required">required</span></label>
-                <input class="text" type="text" id="parameter1" name="parameter1" placeholder="$i18n.getText("placeholder.field1")" value="$!parameter1">
+                <input class="text" type="number" min="1" id="parameter1" name="parameter1" placeholder="$i18n.getText("placeholder.field1")" value="$!parameter1">
                 <div class="description">$i18n.getText("input.field1.desc")</div>
             </div>
             <div class="field-group">
@@ -25,30 +25,6 @@
                 <input type="submit" name="button" value="$i18n.getText("button_save.name")" class="button" formaction="MyActionClass!save.jspa">
                 <input type="submit" name="button" value="$i18n.getText("button_clear.name")" class="button" formaction="MyActionClass!clear.jspa">
             </div>
-
-            #*<br>Возвращается вот это: $temp<br>*#
-        #*
-            <div style="background: #FFFFFF">
-                <table class="jiraform maxWidth">
-                    <tr>
-                        <td class="jiraformheader">
-                            <h3 class="formtitle">Action Alpha Success</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="jiraformbody">
-                            Возвращается вот это: $temp<br>
-                            This page is what the Action Alpha action class shows when success is returned.
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="jiraformbody">
-                            *##*The raw current parameter value is: $action.getParameter1().*##*
-                        </td>
-                    </tr>
-                </table>
-            </div>*#
 
         </form>
     </body>

@@ -5,6 +5,7 @@ import com.atlassian.sal.api.pluginsettings.PluginSettings;
 import com.atlassian.sal.api.pluginsettings.PluginSettingsFactory;
 import info.shestov.den.jira.firstplugin.MyActionClass;
 
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -22,8 +23,14 @@ public class PluginSettingService {
         this.pluginSettings = pluginSettingsFactory.createGlobalSettings();
     }
 
-    public String getParameter1() {
-        return pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null ? "no value" : pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1").toString();
+    public String getParameter1() throws NullPointerException {
+        //return pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1") == null ? "no value" : pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1").toString();
+        try{
+            String p1 = pluginSettings.get(PLUGIN_STORAGE_KEY + ".parameter1").toString();
+            return isIntValidation(p1) ? p1 : "Please input int value > 0";
+        }catch (NullPointerException n){
+            return "no value";
+        }
     }
     public void setParameter1(String parameter1){
         pluginSettings.put(PLUGIN_STORAGE_KEY + ".parameter1", parameter1);
@@ -34,5 +41,13 @@ public class PluginSettingService {
     }
     public void setParameter2(String parameter2){
         pluginSettings.put(PLUGIN_STORAGE_KEY + ".parameter2", parameter2);
+    }
+
+    private static boolean isIntValidation(String value) throws NumberFormatException{
+        try {
+            return Integer.parseInt(value) > 0 ? true : false;
+        } catch (NumberFormatException e){
+            return false;
+        }
     }
 }
