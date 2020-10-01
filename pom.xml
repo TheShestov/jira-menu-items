@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>info.shestov.den.jira.firstplugin</groupId>
     <artifactId>jira-menu-items</artifactId>
-    <version>4.0.0</version>
+    <version>4.1.0</version>
     <organization>
         <name>TheShestov</name>
         <url>http://www.example.com/</url>

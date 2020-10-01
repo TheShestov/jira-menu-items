@@ -50,4 +50,10 @@ public class PluginSettingService {
             return false;
         }
     }
+
+    public Object doClear(){
+        pluginSettings.put(PLUGIN_STORAGE_KEY + ".parameter1", null);
+        pluginSettings.put(PLUGIN_STORAGE_KEY + ".parameter2", null);
+        return true;
+    }
 }

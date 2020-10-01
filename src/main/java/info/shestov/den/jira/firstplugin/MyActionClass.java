@@ -1,13 +1,9 @@
 package info.shestov.den.jira.firstplugin;
 
-import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
-import com.atlassian.sal.api.pluginsettings.PluginSettings;
 import info.shestov.den.jira.firstplugin.service.PluginSettingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.atlassian.jira.web.action.JiraWebActionSupport;
-
-import com.atlassian.sal.api.pluginsettings.PluginSettingsFactory;
 
 import javax.inject.Inject;
 
@@ -49,6 +45,11 @@ public class MyActionClass extends JiraWebActionSupport
     public String doSave(){
         pluginSettingService.setParameter1(parameter1);
         pluginSettingService.setParameter2(parameter2);
+        return SUCCESS;
+    }
+
+    public String doClear(){
+        pluginSettingService.doClear();
         return SUCCESS;
     }
 }
