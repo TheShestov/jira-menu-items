@@ -5,14 +5,15 @@
         </title>
         <meta name="decorator" content="atl.admin" />
         <meta name="admin.active.section" content="admin_plugins_menu/first_section/first-item">
+        $webResourceManager.requireResourcesForContext("jira-menu-items")
     </head>
     <body>
 
-        <form class="aui" action="" method="post">
+        <form class="aui" action="" method="post" id="form-field-group">
             <title>First Plugin</title>
-            <div class="field-group">
+            <div class="field-group" id="field-group">
                 <label for="parameter1">$i18n.getText("input.field1.name")<span class="aui-icon icon-required">required</span></label>
-                <input class="text" type="number" min="1" id="parameter1" name="parameter1" placeholder="$i18n.getText("placeholder.field1")" value="$!parameter1">
+                <input class="text" type="number" min="1"  id="parameter1" name="parameter1" placeholder="$i18n.getText("placeholder.field1")" value="$!parameter1">
                 <div class="description">$i18n.getText("input.field1.desc")</div>
             </div>
             <div class="field-group">
@@ -25,7 +26,21 @@
                 <input type="submit" name="button" value="$i18n.getText("button_save.name")" class="button" formaction="MyActionClass!save.jspa">
                 <input type="submit" name="button" value="$i18n.getText("button_clear.name")" class="button" formaction="MyActionClass!clear.jspa">
             </div>
+            #*<div class="aui-test" id="messages-with-ids-test">
+                <h2> Javascript Messages - ID test</h2>
 
+                <p class="description">  </p>
+
+                <div class="html-code">
+                    <div id="aui-id-bar"></div>
+                </div>
+                <script type="text/javascript">
+                    AJS.messages.success("#field-group", {
+                        title: 'This is work in vm template!',
+                        body: '<p> And this is just content in a Default message.</p>'
+                    });
+                </script>
+            </div>*#
         </form>
     </body>
 </html>

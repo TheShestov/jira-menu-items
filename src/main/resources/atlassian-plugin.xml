@@ -9,19 +9,20 @@
     <param name="plugin-logo">images/pluginLogo.png</param> 
   </plugin-info>  
   <!-- add our i18n resource -->  
-  <resource type="i18n" name="i18n" location="/i18n/jira-menu-items"/>
+  <resource type="i18n" name="i18n" location="/i18n/jira-menu-items"/>  
   <!-- add our web resources -->  
   <web-resource key="jira-menu-items-resources" name="jira-menu-items Web Resources"> 
-    <dependency>com.atlassian.auiplugin:ajs</dependency>  
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <dependency>com.atlassian.auiplugin:aui-form-validation</dependency>
     <resource type="download" name="jira-menu-items.css" location="/css/jira-menu-items.css"/>  
     <resource type="download" name="jira-menu-items.js" location="/js/jira-menu-items.js"/>  
     <resource type="download" name="images/" location="/images"/>  
     <context>jira-menu-items</context> 
   </web-resource>  
-  <webwork1 key="mywebwork" name="mywebwork" i18n-name-key="mywebwork.name">
+  <webwork1 key="mywebwork" name="mywebwork" i18n-name-key="mywebwork.name"> 
     <description key="mywebwork.description">The mywebwork Plugin</description>  
     <actions> 
-      <action name="info.shestov.den.jira.firstplugin.MyActionClass" alias="MyActionClass" roles-required="admin">
+      <action name="info.shestov.den.jira.firstplugin.MyActionClass" alias="MyActionClass" roles-required="admin"> 
         <view name="success">/templates/mywebwork/myactionclass/success.vm</view> 
       </action> 
     </actions> 
@@ -30,10 +31,9 @@
     <description key="firstsection.description">First Section</description>  
     <label key="first_section.mywebwork.label"/> 
   </web-section>  
-
-  <web-item name="First Item" i18n-name-key="first-item.name" key="first-item" section="admin_plugins_menu/first_section" weight="1000">
+  <web-item name="First Item" i18n-name-key="first-item.name" key="first-item" section="admin_plugins_menu/first_section" weight="1000"> 
     <description key="first-item.description">The First Item Plugin</description>  
-    <label key="first-item.label"></label>  
-    <link linkId="first-item-link">/secure/admin/MyActionClass.jspa</link>
+    <label key="first-item.label"/>  
+    <link linkId="first-item-link">/secure/admin/MyActionClass.jspa</link> 
   </web-item>
 </atlassian-plugin>
