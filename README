@@ -1,11 +1,69 @@
-You have successfully created an Atlassian Plugin!
+Пишем плагины для Jira Server/Data Center
+=========================================
 
-Here are the SDK commands you'll use immediately:
+Часть 1 - Создание плагина.
+===========================
 
-* atlas-run   -- installs this plugin into the product and starts it on localhost
-* atlas-debug -- same as atlas-run, but allows a debugger to attach at port 5005
-* atlas-help  -- prints description for all commands in the SDK
+Видео
+-----
 
-Full documentation is always available at:
+https://www.youtube.com/watch?v=WzFVQwGchxI
 
-https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK
+Подготовка
+----------
+
+* Установить [Atlassian SDK](https://marketplace.atlassian.com/apps/1210950/atlassian-plugin-sdk-windows?hosting=server&tab=versions)
+* Установить [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)
+
+Полезные ссылки
+---------------
+
+* [Set up the Atlassian Plugin SDK and build a project](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/)
+* [Atlassian User Interface](https://docs.atlassian.com/aui/)
+* [Forms](https://docs.atlassian.com/aui/9.0.2/docs/forms.html)
+* [WiKi Markdown](https://en.wikipedia.org/wiki/Markdown)
+
+Используемые команды
+--------------------
+
+* `atlas-version` - Проверить, что SDK корректно установлен
+* `atlas-create-jira-plugin` - Создать плагин по шаблону
+* `git init` - Инициализаровать Git репозиторий в текущем каталоге
+* `atlas-create-jira-plugin-module` - Добавить один или несколько шаблонов модулей в плагин (на выбор 34 шаблона модулей)
+* `atlas-debug` - Поднять локальный JIRA сервер для отладки (http://localhost:2990/jira/)
+* `Cntrl-C` Остановить сервер
+
+Часть 2 - Локализация плагина. Сохранение данных с формы в Plugin Data Store.
+=============================================================================
+
+Видео
+-----
+
+https://www.youtube.com/watch?v=IFo33WiB8eY
+https://www.youtube.com/watch?v=vAC6EXCZDSg
+
+Полезные ссылки
+---------------
+
+* [Internationalising your plugin](https://developer.atlassian.com/server/framework/atlassian-sdk/internationalising-your-plugin/) Локализация плагина
+* [Webwork](https://developer.atlassian.com/server/jira/platform/webwork/#notes) Как ограничить видимость формы - roles-required
+* [Store and retrieve plugin data](https://developer.atlassian.com/server/framework/atlassian-sdk/store-and-retrieve-plugin-data/) Как получить данные с формы и сохранить в плагине
+* [Plugin Data Editor servlet](http://localhost:2990/jira/plugins/servlet/pde) Проверить, что данные попали в БД
+* [Alexey Matveev Public Bitbucket](https://bitbucket.org/alex1mmm/) Примеры кода от Алексея Матвеева
+* [Mdoar Bitbucket](https://bitbucket.org/mdoar/webwork-sample/src/master/) Пример кода для работы с WebWork - doValidation, doExecute, doDefault, doSampleRedirect
+
+
+Часть 3 - Работа с Git(Bitbucket)
+=================================
+
+Видео
+-----
+https://www.youtube.com/watch?v=RPTv5anRFVs
+
+
+Часть 4 - Рефакторинг. Вынос кода для работы с настройками в сервис
+===================================================================
+
+Видео
+-----
+https://www.youtube.com/watch?v=uDpEs1DAr1o
