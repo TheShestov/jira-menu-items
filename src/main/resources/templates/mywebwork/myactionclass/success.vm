@@ -27,7 +27,7 @@
                 <input type="submit" name="button" value="$i18n.getText("button_clear.name")" class="button" formaction="MyActionClass!clear.jspa">
             </div>
             #*<div class="aui-test" id="messages-with-ids-test">
-                <h2> Javascript Messages - ID test</h2>
+                <h2> Javascript Messages - ID test github</h2>
 
                 <p class="description">  </p>
 
